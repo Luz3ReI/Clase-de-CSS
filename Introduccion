@@ -1,0 +1,19 @@
+CSS
+
+Cascading Style Sheets
+Describe la presentación de docs HTML
+Un doc HTML puede tener Multiples CSS
+
+como funciona?
+Funciona con selectores que permiten seleccionar uno o mas elementos de nuestro doc HTML dandole propiedades
+Se selecciona uno o mas elementos (html) ,hay distintas propiedades (text-align y color) que pueden tener distintos valores (left y tomato)
+El elemento es el selector, despues se abren los parentesis (llaves) y dentro de esto vienen las propiedades seguidas de dos puntos, a continuacion el valor que va a tener y finaliza con punto y coma.
+
+html { 
+    text-align:left;
+    color: tomato;
+}
+
+
+
+No se debe de hacer CSS dentro de las etiquetas de HTML

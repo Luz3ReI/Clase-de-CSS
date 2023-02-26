@@ -132,3 +132,59 @@ a:active{
     color: red;/* cuando estoy pinchando el link */
 }
 /* El orden de estos css son muy importantes, no se debe de mover */
+
+ul {
+    background-color: cyan;
+    list-style-type: lower-alpha;
+    /* padding: 0px; */
+    /* list-style-position: inside; */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: solid 1px #eee;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+
+tr:nth-child(even){
+    background-color: #eee;
+}
+/* El :nth-child nos deja seleccionar solo algunos elementos dentro de nuestro objeto // recordemos el orden, si esta despues de hover, no se va a mostrar el cambio de color al pasar el mouse*/
+
+tr:hover{
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+span{
+    display: block;
+    /* display: none; */
+    /* visibility: hidden; */
+    max-width: 300px;
+    background-color: #f00;
+}
+
+.inline {
+    display: inline;
+}
+
+/* En inline los elementos que agreguemos no estaran en una nueva linea a diferencia del block // etiquetas de html con defecto en inline son span, los ancortar? (los links) y la etiqueta de img // widht va a asignar siempre el ancho, maxwidht va a ponre el ancho maximo, si es menos, sera menos ancho*/
+
+#position {
+    position: sticky;
+    left: 20px;
+    top: 25px; 
+    /* // esto nos deja encimar los elementos */
+    /* fixed: Posicion con respecto a lo que estamos viendo en el explorador y se mueve // absolut - se va a posicionar relativo con el elemento padre mas cercano que tenga // sticky es una mezcla de los dos, se quedara fijado pero necesita top para saber a donde, de lo contraroi se quedara estatico*/
+}

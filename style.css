@@ -39,7 +39,53 @@ div h2, div h3 {
 } */
 /* para poner un color se puede dar Ctrl+Space mientras estas en el atributo, se pueden dar por ese nombre, RGB, hexagesimal y valores HTSL // en hexagesimal 0 es la ausencia de color y F es el grado mas alto, pueden ser de 3 y 6 digitos // el primer digito representa el rojo, el segundo el verde y el tercero el azul // en 6 digitos, los primeros 2 son rojos, lo sigiuentes 2 son verdes y el tercero es azul. El de la izquiera es el de mayor valor y el segundo define su intensidad*/
 
-.color {
+/* .color {
     color: rgb(0, 255, 255);
-}
+} */
 /* De igual manera el primero numero es rojo, siguiente verde y tercero azul */
+
+/* Si se ven muchas instrucciones en comentario, es porque se busca trabajar con el minimo de instrucciones cruzadas posibles  */
+
+
+.color {
+    /* border: 5px red outset; */
+    /* dotted
+        dashed
+        solid
+        double
+        groove
+        ridge
+        inset
+        outset
+        none
+        hidden
+        Estos son a manera tridimensional y dependeran del color del borde
+    */
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 5px;
+    /* los pixeles son unidades de medidas para asignar dimensiones a los elementos utilizando css // los cm o mm no son confiables y no se ven igual en los dispositivos // La medida de EM es relativa al tamaño de las letras a la que se aplica // La medida REM es relativa al tamaño de la fuente de todo el HTML*/
+}
+
+/* Con el Ctrl+Space se ven todas las posibilidades de nuestro atributo // Se puede cambiar csss en nuestro explorador en Element>Styles // */
+
+#fondo {
+    background-color: rgba(0,0, 0, .7);
+    /* opacity: 0.3; */
+    /* la a es un simbolo para la opacidad o transparencia que tendra el color que aplicamos con RGB. Siendo 1 completamente solido y 0 completamente transparente  // opacity le da la opacidad a todo el elemento con el mismo criterio que a*/
+    height: 200px;
+    /* background-image: url('cuaderno.jpg'); */
+    
+    /* Ni contain ni auto se redimensionan si se cambia el tamaño de la pantalla, al contrario de cover // en dimensiones el primer valor sera el ancho y el alto es el segundo */
+    /* background-repeat: repeat-y; */
+    /* En caso de que haya espacio la imagen se podria repetir, con este comando podemos evitar que lo haga o hacerlo de manera vertical u horizontal */
+    /* background-position: center top;
+    Con esa propiedad estamos diciendole donde debe empezar a repetirse, la primera posicion es de lados y la segunda es arriba o abajo */
+
+    background: #f00 url('cuaderno.jpg') repeat-y center bottom / 100px 100px;
+    /* Si nosotros utilizamos una propiedad de background y definimos background size antes, esta no la va a tomar en cuenta / si queremos utilizarla, debems moverla despues de la propiedad de background*/
+    /* background-size: 100px 100px; */
+
+
+}

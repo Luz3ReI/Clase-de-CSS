@@ -1,4 +1,4 @@
-CSS
+/* CSS
 
 Cascading Style Sheets
 Describe la presentación de docs HTML
@@ -17,3 +17,26 @@ html {
 
 
 No se debe de hacer CSS dentro de las etiquetas de HTML
+
+
+
+
+
+Para poder poner nuestras propias fuentes podemos ir a (despues de buscarla en google)
+1. Copiar el link
+    ir a la etiqueta de Head en el HTML y pegar lo copiado
+    vamos al style css. y luego lo pegamos en font family lo que viene en CSS
+
+
+Los links tienen 4 estados en html:
+1. cuando nunca han sido visitados
+2. cuando ha sido visitado
+3. cuando pasamos el mouse encima de el
+4. cuando ya ha sido visitado
+
+
+
+
+
+
+*/

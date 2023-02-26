@@ -28,7 +28,7 @@ div h2, div h3 {
 
 * {
     font-size: 24px;
-    color: black;
+    /* color: black; // hay que recordar quitar esto si se quiere hacer algo nuevo*/
 }
 /* El asterisco es un selector universal que aplicara a todo el documento siempre y cuando estas no hayan sido definidas previamente*/
 
@@ -84,8 +84,51 @@ div h2, div h3 {
     Con esa propiedad estamos diciendole donde debe empezar a repetirse, la primera posicion es de lados y la segunda es arriba o abajo */
 
     background: #f00 url('cuaderno.jpg') repeat-y center bottom / 100px 100px;
-    /* Si nosotros utilizamos una propiedad de background y definimos background size antes, esta no la va a tomar en cuenta / si queremos utilizarla, debems moverla despues de la propiedad de background*/
+    /* Si nosotros utilizamos una propiedad de background y definimos background size antes, esta no la va a tomar en cuenta / si queremos utilizarla, debems moverla despues de la propiedad de background // oooo ponerle el 100px despues de una diagonal*/
     /* background-size: 100px 100px; */
-
-
 }
+
+.margen {
+    background-color: chocolate;
+    margin: 15px;
+    /* El primer numero es el margen de arriba, 2-margin derecha, 3- margin de abajo, 4margin left  // si se le deja un solo numero entonces lo tomara para todos los margenes// margin es afuera del elemento y padding es adentro del elemento*/
+    padding: 30px 15px 5px;
+    /* Si se dejan dos valores, entonces se tomara como horizontal y vertical // Al agregar un tercer valor se cambia al 1-superior 2-horizontal 3inferior*/
+    border: solid 1px black;
+    height: 100px;
+    width: 50px;
+    /* Al hacer el cuadro de texto chiquito este intentara ajustarse al contenido pero, algunas letras aun pueden salirse del cuadro (no las va a cortar)*/
+    overflow: scroll;
+    outline: 1px solid red;
+    /* Es una propiedad que se pone fuera del borde antes del margen y recibe las mismas propiedades que el borde */
+}
+
+
+/* Boxmodel es como sw posiciona cada elemento en CSS (esta en computed en la parte de elements al darle inv a una página) todo tiene un margen, un borde, padding y el contenido // cuando hacemos widht, solamente se aplicara el ancho al contenido, si quisiesemos contar el valor total del ancho de nuestro elemento HTML, hay que contar wl contenido, el padding, el borde y el margen //} */
+
+
+.text {
+    font-family: 'Shantell Sans', cursive;
+    /* Si no puede cargar la primera fuente, entonces ira hacia el siguiente */
+    text-align: justify;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue;
+    /* El primer valor es cuanto se va a mover hacia la derecha y el segundo es la sombra ahcia abajo. El tecrero es la cantidad de blurr que se le puede poner al texto*/
+}
+
+a:link {
+    color:blueviolet
+}/* Link es cuando no ha sido visitadi */
+
+a:visited {
+    color: gray;
+}
+
+a:hover{
+    color: yellow;
+} /* Es cuando esta pasando el mouse por encima */
+
+a:active{
+    color: red;/* cuando estoy pinchando el link */
+}
+/* El orden de estos css son muy importantes, no se debe de mover */

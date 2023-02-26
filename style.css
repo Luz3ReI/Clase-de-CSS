@@ -188,3 +188,47 @@ span{
     /* // esto nos deja encimar los elementos */
     /* fixed: Posicion con respecto a lo que estamos viendo en el explorador y se mueve // absolut - se va a posicionar relativo con el elemento padre mas cercano que tenga // sticky es una mezcla de los dos, se quedara fijado pero necesita top para saber a donde, de lo contraroi se quedara estatico*/
 }
+
+.left {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    height: 200px;
+}
+
+.right {
+    float: right;
+}
+
+/* .card {
+    border: solid 0px #ddd;
+    border-radius: 5px;
+    margin: 0;
+    padding: 10px 0;
+    width: 33.33%;
+} */
+
+.column {
+
+    margin: 0;
+    padding: 10px 0;
+    width: 33.33%;
+}
+
+.inline-block {
+    display: inline-block;
+    height: 55px;
+    background-color: red;
+}
+/* Los elementos que tienen como propiedad de display a INLINE no se les puede asignar valor de height o widht */
+
+.center {
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+    }
